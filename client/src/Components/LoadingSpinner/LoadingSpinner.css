@@ -1,0 +1,133 @@
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.load-container {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  text-indent: -9999em;
+  animation: mymove 1.3s infinite linear;
+  -webkit-animation: mymove 1.5s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+@keyframes mymove {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em #383636, 2em -2em 0 0em #383636, 3em 0 0 -1em #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 -1em #383636, -3em 0 0 -1em #383636, -2em -2em 0 0 #383636;
+  }
+
+  12.5% {
+    box-shadow: 0 -3em 0 0 #383636, 2em -2em 0 0.2em #383636, 3em 0 0 0 #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 -1em #383636, -3em 0 0 -1em #383636, -2em -2em 0 -1em #383636;
+  }
+
+  25% {
+    box-shadow: 0 -3em 0 -0.5em #383636, 2em -2em 0 0 #383636, 3em 0 0 0.2em #383636, 2em 2em 0 0 #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 -1em #383636, -3em 0 0 -1em #383636, -2em -2em 0 -1em #383636;
+  }
+
+  37.5% {
+    box-shadow: 0 -3em 0 -1em #383636, 2em -2em 0 -1em #383636, 3em 0em 0 0 #383636, 2em 2em 0 0.2em #383636,
+      0 3em 0 0em #383636, -2em 2em 0 -1em #383636, -3em 0em 0 -1em #383636, -2em -2em 0 -1em #383636;
+  }
+
+  50% {
+    box-shadow: 0 -3em 0 -1em #383636, 2em -2em 0 -1em #383636, 3em 0 0 -1em #383636, 2em 2em 0 0em #383636,
+      0 3em 0 0.2em #383636, -2em 2em 0 0 #383636, -3em 0em 0 -1em #383636, -2em -2em 0 -1em #383636;
+  }
+
+  62.5% {
+    box-shadow: 0 -3em 0 -1em #383636, 2em -2em 0 -1em #383636, 3em 0 0 -1em #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 0 #383636, -2em 2em 0 0.2em #383636, -3em 0 0 0 #383636, -2em -2em 0 -1em #383636;
+  }
+
+  75% {
+    box-shadow: 0em -3em 0 -1em #383636, 2em -2em 0 -1em #383636, 3em 0em 0 -1em #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 0 #383636, -3em 0em 0 0.2em #383636, -2em -2em 0 0 #383636;
+  }
+
+  87.5% {
+    box-shadow: 0em -3em 0 0 #383636, 2em -2em 0 -1em #383636, 3em 0 0 -1em #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 0 #383636, -3em 0em 0 0 #383636, -2em -2em 0 0.2em #383636;
+  }
+}
+
+@-webkit-keyframes mymove
+    
+    /*Safari and Chrome*/ {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em #383636, 2em -2em 0 0em #383636, 3em 0 0 -1em #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 -1em #383636, -3em 0 0 -1em #383636, -2em -2em 0 0 #383636;
+  }
+
+  12.5% {
+    box-shadow: 0 -3em 0 0 #383636, 2em -2em 0 0.2em #383636, 3em 0 0 0 #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 -1em #383636, -3em 0 0 -1em #383636, -2em -2em 0 -1em #383636;
+  }
+
+  25% {
+    box-shadow: 0 -3em 0 -0.5em #383636, 2em -2em 0 0 #383636, 3em 0 0 0.2em #383636, 2em 2em 0 0 #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 -1em #383636, -3em 0 0 -1em #383636, -2em -2em 0 -1em #383636;
+  }
+
+  37.5% {
+    box-shadow: 0 -3em 0 -1em #383636, 2em -2em 0 -1em #383636, 3em 0em 0 0 #383636, 2em 2em 0 0.2em #383636,
+      0 3em 0 0em #383636, -2em 2em 0 -1em #383636, -3em 0em 0 -1em #383636, -2em -2em 0 -1em #383636;
+  }
+
+  50% {
+    box-shadow: 0 -3em 0 -1em #383636, 2em -2em 0 -1em #383636, 3em 0 0 -1em #383636, 2em 2em 0 0em #383636,
+      0 3em 0 0.2em #383636, -2em 2em 0 0 #383636, -3em 0em 0 -1em #383636, -2em -2em 0 -1em #383636;
+  }
+
+  62.5% {
+    box-shadow: 0 -3em 0 -1em #383636, 2em -2em 0 -1em #383636, 3em 0 0 -1em #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 0 #383636, -2em 2em 0 0.2em #383636, -3em 0 0 0 #383636, -2em -2em 0 -1em #383636;
+  }
+
+  75% {
+    box-shadow: 0em -3em 0 -1em #383636, 2em -2em 0 -1em #383636, 3em 0em 0 -1em #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 0 #383636, -3em 0em 0 0.2em #383636, -2em -2em 0 0 #383636;
+  }
+
+  87.5% {
+    box-shadow: 0em -3em 0 0 #383636, 2em -2em 0 -1em #383636, 3em 0 0 -1em #383636, 2em 2em 0 -1em #383636,
+      0 3em 0 -1em #383636, -2em 2em 0 0 #383636, -3em 0em 0 0 #383636, -2em -2em 0 0.2em #383636;
+  }
+}

@@ -1,0 +1,33 @@
+.filterList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.filterItemContainer {
+  border: 1px dotted #fff;
+  margin: 0;
+  padding: 5px 10px;
+}
+.boolean {
+  display: flex;
+  justify-content: space-between;
+}
+.range-header {
+  display: flex;
+  justify-content: space-between;
+}
+.select-header {
+  display: flex;
+  justify-content: end;
+}
+.boolean-switch {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.range-body {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}

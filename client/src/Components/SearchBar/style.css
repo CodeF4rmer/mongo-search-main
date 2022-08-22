@@ -1,0 +1,19 @@
+.search-container {
+    position: relative;
+    width: 100%;
+}
+.search-container input {
+    width: 100%;
+}
+.search-button {
+    background-color: transparent;
+    position: absolute;
+    top: 5px;
+    right: 65px;
+    border: 1px dotted gray;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0 15px;
+    font-size: 14px;
+    color: gray;
+}

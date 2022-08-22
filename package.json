@@ -1,0 +1,33 @@
+{
+  "name": "mongo-searcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-bootstrap": "^2.5.0",
+    "react-burger-menu": "^2.7.1",
+    "react-collapsed": "^3.3.2",
+    "react-icons": "^4.4.0",
+    "react-loader-spinner": "^5.1.7-beta.1",
+    "react-number-format": "^4.9.3",
+    "react-pro-sidebar": "^0.7.1",
+    "react-promise-tracker": "^2.1.0",
+    "react-search-box": "^2.3.0",
+    "react-spinners": "^0.13.4"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  },
+  "proxy": "http://localhost:3001"
+}
